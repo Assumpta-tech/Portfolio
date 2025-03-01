@@ -507,6 +507,7 @@ section {
   overflow: hidden;
   border-radius: 8px;
   cursor: pointer;
+  margin-bottom: 70px;
 }
 .row img {
   width: 100%;
