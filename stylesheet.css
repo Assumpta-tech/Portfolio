@@ -6,6 +6,10 @@
   font-family: "poppins", sans-serif;
 }
 body {
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   color: #ededed;
   overflow-x: hidden;
   background: #001718;
@@ -50,6 +54,7 @@ body {
 .home {
   position: relative;
   width: 100%;
+  max-width: 100%;
   justify-content: space-between;
   height: 100vh;
   background: url(image/background.png) no-repeat;
