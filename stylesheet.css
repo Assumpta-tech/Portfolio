@@ -18,7 +18,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 80%;
+  width: 100%;
   padding: 20px 10%;
   background: #051129;
   display: flex;
@@ -119,7 +119,7 @@ body {
 .home-sci a:hover {
   background: #0ef;
   color: #081b29;
-  box-shadow: 0 0 20px #0ef;
+  box-shadow: 0 0 20px #081b29;
 }
 .btn-box {
   display: inline-block;
@@ -134,12 +134,12 @@ body {
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: 2s;
-  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  box-shadow: 0 0 5px #081b29, 0 0 25px #081b29;
   margin-top: 25px;
 }
 .btn-box:hover {
-  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
-    0 0 200px cyan;
+  box-shadow: 0 0 5px cyan, 0 0 25px #081b29, 0 0 50px #081b29,
+    0 0 100px #081b29, 0 0 200px #081b29;
 }
 
 .about {
@@ -244,8 +244,8 @@ body {
   box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
 }
 .read:hover {
-  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
-    0 0 200px cyan;
+  box-shadow: 0 0 5px cyan, 0 0 25px #081b29, 0 0 50px #081b29,
+    0 0 100px #081b29, 0 0 200px #081b29;
 }
 .services-list div:hover {
   transform: translateY(-10px);
@@ -671,12 +671,12 @@ form textarea {
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: 2s;
-  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  box-shadow: 0 0 5px #0ef, 0 0 25px #081b29;
 }
 
 .contact-form form .send:hover {
-  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
-    0 0 200px cyan;
+  box-shadow: 0 0 5px cyan, 0 0 25px #081b29, 0 0 50px #081b29,
+    0 0 100px #081b29, 0 0 200px #081b29;
 }
 .last-text p {
   width: 100%;
@@ -738,4 +738,30 @@ form textarea {
     transform: translateY(0px);
     opacity: 1;
   }
+}
+/*bootstrap styling*/
+
+.card-image {
+  box-shadow: 0 0 20px #012290f7, 0 0 40px #0053b8f7;
+  border: #081b29;
+}
+.card:hover {
+  transition: ease-in-out 0.5s;
+  transform: scale(1.01) translateY(-5px);
+}
+#portfolio .card-img-top {
+  width: 100%; /* image fills the card width */
+  height: 100%; /* height adjusts automatically to keep ratio */
+  object-fit: contain; /* prevent cropping, fit entire image */
+  transform: none !important;
+  transition: none !important;
+  box-shadow: 0 0 20px #012290f7, 0 0 40px #0053b8f7;
+  border-radius: none;
+}
+.portfolio-content {
+  margin: 10px;
+}
+.card-body {
+  background-color: #081b29;
+  color: #fff;
 }
