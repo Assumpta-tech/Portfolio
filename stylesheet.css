@@ -62,6 +62,8 @@ body {
   display: flex;
   align-items: center;
   padding: 70px 10% 10%;
+  margin-top: 40px;
+  margin-left: 0;
 }
 .home-content {
   max-width: 600px;
@@ -145,8 +147,8 @@ body {
 .about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  gap: 1.5rem;
+  align-items: end;
+  gap: 2.5rem;
   padding-bottom: 6rem;
 }
 .about-img img {
@@ -671,7 +673,7 @@ form textarea {
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: 2s;
-  box-shadow: 0 0 5px #0ef, 0 0 25px #081b29;
+  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
 }
 
 .contact-form form .send:hover {
@@ -743,11 +745,9 @@ form textarea {
 
 .card-image {
   box-shadow: 0 0 20px #012290f7, 0 0 40px #0053b8f7;
-  border: #081b29;
 }
 .card:hover {
-  transition: ease-in-out 0.5s;
-  transform: scale(1.01) translateY(-5px);
+  transition: background 0.5s, transform 0.5s;
 }
 #portfolio .card-img-top {
   width: 100%; /* image fills the card width */
@@ -756,7 +756,6 @@ form textarea {
   transform: none !important;
   transition: none !important;
   box-shadow: 0 0 20px #012290f7, 0 0 40px #0053b8f7;
-  border-radius: none;
 }
 .portfolio-content {
   margin: 10px;
