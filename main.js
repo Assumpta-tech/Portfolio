@@ -5,3 +5,7 @@ var typed = new Typed(".text", {
   backDelay: 1000,
   loop: true,
 });
+
+function setYear() {
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+}
