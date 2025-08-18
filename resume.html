@@ -3,279 +3,298 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sample</title>
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Portfolio</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
-    <link href="custom.css" rel="stylesheet" />
   </head>
-  <body onload="setYear()">
-    <section id="home">
-      <nav class="navbar navbar-expand-lg bg-white fixed-top border-bottom border-primary">
-        <div class="container-fluid">
-          <a class="navbar-brand text-uppercase" href="#">
-            <span class="fw-bold"> Portfolio</span>
-          </a>
-          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="navbar-collapse collapse" id="collapseNavbar">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Portfolio</a>
+
+      <nav class="navbar">
+        <a href="#home" style="--1: 1" class="Active">Home</a>
+        <a href="#about" style="--1: 2">About</a>
+        <a href="#skills" style="--1: 3">Skill</a>
+        <a href="#services" style="--1: 4">Portfolio</a>
+        <a href="#contact" style="--1: 5">Contact</a>
+      </nav>
+    </header>
+    <section class="home">
+      <div class="home-content">
+        <h3>Hello It's Me</h3>
+        <h1>Assumpta Uwamariya</h1>
+        <h3>And I'm a <span class="text"></span></h3>
+        <p class="more">
+          I'm a Web developer with extensive experience for over 3 years.
+          <br />expertise is in creating and designing websites, including
+          Frontend design and many more...
+        </p>
+
+        <div class="home-sci">
+          <a href="#" style="--1: 7"><i class="bx bxl-facebook"></i></a>
+          <a href="#" style="--1: 8"><i class="bx bxl-instagram"></i></a>
+          <a href="#" style="--1: 9"><i class="bx bxl-whatsapp"></i></a>
+          <a href="#" style="--1: 10"><i class="bx bxl-tiktok"></i></a>
+        </div>
+        <a href="#" class="btn-box">More About Me</a>
+      </div>
+
+      <span class="home-imgHover"></span>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="image/mine.png" alt="" srcset="" />
+      </div>
+      <div class="about-text">
+        <h2>About <span>Me</span></h2>
+        <h4>Frontend Developer</h4>
+        <p>
+          I’m a computer science enthusiast, programmer, and front-end developer
+          with a passion for website design and problem-solving. I love creating
+          smooth, user-friendly digital experiences and exploring innovative
+          solutions. As an Unleash Alumni and a virtual assistant, I’ve worked
+          on diverse projects that challenge me to think outside the box. Always
+          learning, always building.
+        </p>
+        <a href="#" class="btn-box">More About Me</a>
+      </div>
+    </section>
+
+    <section>
+      <div class="services" id="services">
+        <div class="container-fluid px-3">
+          <h1 class="sub-title">My <span>Services</span></h1>
+          <div class="services-list">
+            <div>
+              <i class="bx bx-code-alt" style="color: #00eeff"></i>
+              <h2>Website Design</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                ducimus sit adipisci voluptatum dolorem odit suscipit aliquam,
+                culpa mollitia odio maxime consequatur obcaecati dolore?
+                Quibusdam dignissimos placeat porro aperiam unde.
+              </p>
+              <a href="#" class="read">Learn More</a>
+            </div>
+            <div>
+              <i class="bx bx-crop" style="color: #00eeff"></i>
+              <h2>Front-End Development</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                ducimus sit adipisci voluptatum dolorem odit suscipit aliquam,
+                culpa mollitia odio maxime consequatur obcaecati dolore?
+                Quibusdam dignissimos placeat porro aperiam unde.
+              </p>
+              <a href="#" class="read">Learn More</a>
+            </div>
+            <div>
+              <i class="bx bxl-apple" style="color: #00eeff"></i>
+              <h2>UI/UX Design</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                ducimus sit adipisci voluptatum dolorem odit suscipit aliquam,
+                culpa mollitia odio maxime consequatur obcaecati dolore?
+                Quibusdam dignissimos placeat porro aperiam unde.
+              </p>
+              <a href="#" class="read">Learn More</a>
+            </div>
           </div>
         </div>
-      </nav>
+      </div>
+    </section>
+    <h1 class="sub-title">My <span>Skills</span></h1>
+
+    <section>
+      <div class="container1" id="skills">
+        <h1 class="heading1">Technical Skills</h1>
+        <div class="Technical-bars">
+          <div class="bar">
+            <i class="bx bxl-html5" style="color: #c95d2e"></i>
+            <div class="info">
+              <span>HTML</span>
+            </div>
+            <div class="progress-line html">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <i class="bx bxl-css3" style="color: #147bbc"></i>
+            <div class="info">
+              <span>CSS</span>
+            </div>
+            <div class="progress-line css">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <i class="bx bxl-javascript" style="color: #b0bc1e"></i>
+            <div class="info">
+              <span>JavaScript</span>
+            </div>
+            <div class="progress-line Javascript">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <i class="bx bxl-python" style="color: #c32ec9"></i>
+            <div class="info">
+              <span>Python</span>
+            </div>
+            <div class="progress-line python">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <i class="bx bxl-react" style="color: #69bcbc"></i>
+            <div class="info">
+              <span>REACT</span>
+            </div>
+            <div class="progress-line react">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <i class="bx bxl-java" style="color: #007396"></i>
+            <div class="info">
+              <span>JAVA</span>
+            </div>
+            <div class="progress-line java">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container1" style="margin-top: 120px">
+        <h1 class="heading1">Professional Skills</h1>
+        <div class="radial-bars">
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">90%</div>
+            <div class="text">Creativity</div>
+          </div>
+
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-5" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">97%</div>
+            <div class="text">Critical Thinking</div>
+          </div>
+
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">85%</div>
+            <div class="text">Communication</div>
+          </div>
+
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">95%</div>
+            <div class="text">Problem Solving</div>
+          </div>
+
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-5" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">92%</div>
+            <div class="text">Team Work</div>
+          </div>
+        </div>
+      </div>
     </section>
     <section>
-      <div class="container">
-        <div class="row flex-lg-row flex-md-row flex-column-reverse justify-content-center align-items-center min-vh-100">
-          <div class="col-lg-6 col-md-6 col-12 text-lg-start text-md-start text-center">
-            <h3>Hello I'm</h3>
-            <h1 class="fw-bold">Assumpta Uwamariya</h1>
-            <h3>And I'm a <span class="text fw-bold text-primary"></span></h3>
-            <p class="w-auto">I'm a Web developer with extensive experience for over 3 years. expertise is in creating and designing websites, including Frontend design and many more...</p>
-            <div class="mx-lg-0 mx-md-0 mx-auto w-50">
-              <ul class="list-unstyled d-flex gap-3">
-                <li class="bg-primary px-2 py-1 rounded-circle">
-                  <a href="#" class="text-white" style="--1: 7"><i class="bx bxl-facebook"></i></a>
-                </li>
-                <li class="bg-primary px-2 py-1 rounded-circle">
-                  <a href="#" class="text-white" style="--1: 8"><i class="bx bxl-instagram"></i></a>
-                </li>
-                <li class="bg-primary px-2 py-1 rounded-circle">
-                  <a href="#" class="text-white" style="--1: 9"><i class="bx bxl-whatsapp"></i></a>
-                </li>
-                <li class="bg-primary px-2 py-1 rounded-circle">
-                  <a href="#" class="text-white" style="--1: 10"><i class="bx bxl-tiktok"></i></a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <a href="#" class="btn btn-primary rounded-5">More about me</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-12 text-center">
-            <img src="https://i.pravatar.cc/300?img=32" class="rounded-circle img-thumbnail" />
-            <hr class="d-lg-none d-md-none" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="bg-primary py-5 text-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-12 text-center">
-            <img src="https://i.pravatar.cc/300?img=32" class="rounded-circle img-thumbnail" />
-            <hr class="d-lg-none d-md-none" />
-          </div>
-
-          <div class="col-lg-6 col-md-6 col-12 text-lg-start text-md-start text-center">
-            <h1 class="fw-bold text-white text-uppercase">About me</h1>
-            <hr class="border-light border-5 col-5 mx-lg-0 mx-md-0 mx-auto" />
-
-            <h2 class="fw-bold">Frontend Developer</h2>
-            <p>I’m a computer science enthusiast, programmer, and front-end developer with a passion for website design and problem-solving. I love creating smooth, user-friendly digital experiences and exploring innovative solutions. As an Unleash Alumni and a virtual assistant, I’ve worked on diverse projects that challenge me to think outside the box. Always learning, always building.</p>
-            <div>
-              <a href="#" class="btn btn-primary rounded-5">More about me</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="services" class="py-5">
-      <hr class="border-primary border-2" />
-      <div class="container">
-        <div class="text-center mb-5 mt-5">
-          <h1 class="fw-bold text-uppercase">My <span class="text-primary">Services</span></h1>
-          <hr class="border-primary border-5 mx-auto col-lg-3 col-md-3 col-6" />
-        </div>
-        <div class="row ga-plg-0 gap-md-0 gap-4">
-          <div class="col-lg-4 col-md-4 col-12">
-            <div class="card border-primary border-2 shadow">
-              <div class="card-body">
-                <h1 class="text-primary"><i class="bx bx-code-alt"></i></h1>
-                <h3>Website Design</h3>
-                <p class="fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ducimus sit adipisci voluptatum dolorem odit suscipit aliquam, culpa mollitia odio maxime consequatur obcaecati dolore? Quibusdam dignissimos placeat porro aperiam unde.</p>
-                <a href="#" class="btn btn-primary rounded-5 float-end">Learn more</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-12">
-            <div class="card border-primary border-2 shadow">
-              <div class="card-body">
-                <h1 class="text-primary"><i class="bx bx-crop"></i></h1>
-                <h3>Front-End Development</h3>
-                <p class="fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ducimus sit adipisci voluptatum dolorem odit suscipit aliquam, culpa mollitia odio maxime consequatur obcaecati dolore? Quibusdam dignissimos placeat porro aperiam unde.</p>
-                <a href="#" class="btn btn-primary rounded-5 float-end">Learn more</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-12">
-            <div class="card border-primary border-2 shadow">
-              <div class="card-body">
-                <h1 class="text-primary"><i class="bx bxl-apple"></i></h1>
-                <h3>UI/UX Design</h3>
-                <p class="fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ducimus sit adipisci voluptatum dolorem odit suscipit aliquam, culpa mollitia odio maxime consequatur obcaecati dolore? Quibusdam dignissimos placeat porro aperiam unde.</p>
-                <a href="#" class="btn btn-primary rounded-5 float-end">Learn more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="py-5">
-      <hr class="border-primary border-2" />
-      <div class="container">
-        <div class="text-center mb-5 mt-5">
-          <h1 class="fw-bold text-uppercase">My <span class="text-primary">Skills</span></h1>
-          <hr class="border-primary border-5 mx-auto col-lg-3 col-md-3 col-6" />
-        </div>
-        <div class="row gap-5">
-          <div class="col-12">
-            <div>
-              <h1 class="fw-bold">Technical Skills</h1>
-              <hr class="border-5 border-primary col-lg-3 col-md-3 col-7" />
-              <div class="row gap-4">
-                <div class="col-lg-3 col-md-3 col-12">
-                  <i class="bx bxl-html5 icon" style="color: #c95d2e"></i>
-                  <h6>HTML</h6>
-                  <div class="text-end" style="width: 95%">
-                    <h6>95%</h6>
-                  </div>
-                  <div class="progress" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar" style="width: 95%"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-3 col-12">
-                  <i class="bx bxl-css3 icon" style="color: #147bbc"></i>
-                  <h6>CSS</h6>
-                  <div class="text-end" style="width: 80%">
-                    <h6>80%</h6>
-                  </div>
-                  <div class="progress" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar" style="width: 80%"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-3 col-12">
-                  <i class="bx bxl-javascript icon" style="color: #b0bc1e"></i>
-                  <h6>JavaScript</h6>
-                  <div class="text-end" style="width: 79%">
-                    <h6>79%</h6>
-                  </div>
-                  <div class="progress" role="progressbar" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar" style="width: 79%"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-3 col-md-3 col-12">
-                  <i class="bx bxl-python icon" style="color: #c32ec9"></i>
-                  <h6>Python</h6>
-                  <div class="text-end" style="width: 75%">
-                    <h6>75%</h6>
-                  </div>
-                  <div class="progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar" style="width: 75%"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-3 col-12">
-                  <i class="bx bxl-react icon" style="color: #69bcbc"></i>
-                  <h6>React</h6>
-                  <div class="text-end" style="width: 72%">
-                    <h6>72%</h6>
-                  </div>
-                  <div class="progress" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar" style="width: 72%"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-3 col-12">
-                  <i class="bx bxl-java icon" style="color: #007396"></i>
-                  <h6>Java</h6>
-                  <div class="text-end" style="width: 79%">
-                    <h6>86%</h6>
-                  </div>
-                  <div class="progress" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar" style="width: 86%"></div>
+      <div id="portfolio" id="project">
+        <div class="main-text" id="project">
+          <h2>Latest <span>Project</span></h2>
+          <div class="portfolio-content container-fluid px-5">
+            <div class="row row-cols-1 row-cols-md-3 g-5">
+              <div class="col-md-4 mb-4">
+                <div class="card card-image" style="width: 100%">
+                  <img
+                    src="image/Main Logo.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: cyan">Chat Web App</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card’s content.
+                    </p>
+                    <a
+                      href="https://online-chat-web-app.netlify.app/"
+                      class="btn"
+                      style="background-color: #00eeff"
+                      target="_blank"
+                      >Go somewhere</a
+                    >
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-12">
-            <div>
-              <h1 class="fw-bold">Professional Skills</h1>
-              <hr class="border-5 border-primary col-lg-3 col-md-3 col-8" />
-              <div class="row gap-4">
-                <div class="col-lg-6 col-md-6 col-12">
-                  <h6>Creativity</h6>
-                  <div class="text-end" style="width: 90%">
-                    <h6>90%</h6>
-                  </div>
-                  <div class="progress" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar progress-bar" style="width: 90%"></div>
+
+              <div class="col-md-4 mb-4">
+                <div class="card card-image" style="width: 100%">
+                  <img src="image/isoko.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: cyan">
+                      IsokoOnline App
+                    </h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card’s content.
+                    </p>
+                    <a
+                      href="https://isokoonline.netlify.app/"
+                      class="btn"
+                      style="background-color: #00eeff"
+                      target="_blank"
+                      >Go somewhere</a
+                    >
                   </div>
                 </div>
+              </div>
 
-                <div class="col-lg-5 col-md-5 col-12">
-                  <h6>Critical Thinking</h6>
-                  <div class="text-end" style="width: 97%">
-                    <h6>97%</h6>
-                  </div>
-                  <div class="progress" role="progressbar" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar progress-bar" style="width: 97%"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-3 col-md-3 col-12">
-                  <h6>Communication</h6>
-                  <div class="text-end" style="width: 85%">
-                    <h6>85%</h6>
-                  </div>
-                  <div class="progress" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar progress-bar" style="width: 85%"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-12">
-                  <h6>Problem Solving</h6>
-                  <div class="text-end" style="width: 95%">
-                    <h6>95%</h6>
-                  </div>
-                  <div class="progress" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar progress-bar" style="width: 95%"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-12">
-                  <h6>Team Work</h6>
-                  <div class="text-end" style="width: 92%">
-                    <h6>92%</h6>
-                  </div>
-                  <div class="progress" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar progress-bar" style="width: 92%"></div>
+              <div class="col-md-4 mb-4">
+                <div class="card card-image" style="width: 100%">
+                  <img src="image/weather.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: cyan">Weather App</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card’s content.
+                    </p>
+                    <a
+                      href="https://weather-forecast-app-by-assumpta.netlify.app/"
+                      class="btn"
+                      style="background-color: #00eeff"
+                      target="_blank"
+                      >Go somewhere</a
+                    >
                   </div>
                 </div>
               </div>
@@ -285,133 +304,54 @@
       </div>
     </section>
 
-    <section id="projects" class="py-5">
-      <hr class="border-primary border-2" />
-      <div class="container">
-        <div class="text-center mb-5 mt-5">
-          <h1 class="fw-bold text-uppercase">Latest <span class="text-primary">Project</span></h1>
-          <hr class="border-primary border-5 mx-auto col-lg-3 col-md-3 col-6" />
+    <section class="contact" id="contact">
+      <div class="contact-text">
+        <h2>Contact <span>Me</span></h2>
+        <h4>Let's Work Together</h4>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit
+          repudiandae aperiam eius provident quia optio modi inventore commodi
+          sequi, quas, assumenda tenetur ducimus nulla dolores sed deserunt illo
+          odio pariatur!
+        </p>
+        <div class="contact-list">
+          <li><i class="bx bxs-send"></i> uwamariyaassumpta24@gmail.com</li>
+          <li><i class="bx bxs-phone"></i> +250780193787</li>
         </div>
-        <div class="row ga-plg-0 gap-md-0 gap-4">
-          <div class="col-lg-4 col-md-4 col-12">
-            <div class="card border-primary border-2 shadow">
-              <div class="card-img-top">
-                <img src="image/isoko.png" class="w-100" height="300" />
-              </div>
-              <div class="card-body">
-                <h3 class="text-capitalize">IsokoOnline app</h3>
-                <p class="fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ducimus sit adipisci voluptatum dolorem odit suscipit aliquam, culpa mollitia odio maxime consequatur obcaecati dolore? Quibusdam dignissimos placeat porro aperiam unde.</p>
-                <a href="#" class="btn btn-primary rounded-5 float-end">Demo</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-12">
-            <div class="card border-primary border-2 shadow">
-              <div class="card-img-top">
-                <img src="image/weather.png" class="w-100" height="300" />
-              </div>
-              <div class="card-body">
-                <h3 class="text-capitalize">Weather app</h3>
-                <p class="fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ducimus sit adipisci voluptatum dolorem odit suscipit aliquam, culpa mollitia odio maxime consequatur obcaecati dolore? Quibusdam dignissimos placeat porro aperiam unde.</p>
-                <a href="#" class="btn btn-primary rounded-5 float-end">Demo</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-12">
-            <div class="card border-primary border-2 shadow">
-              <div class="card-img-top">
-                <img src="image/Main Logo.png" class="w-100" height="300" />
-              </div>
-              <div class="card-body">
-                <h3 class="text-capitalize">Chat web app</h3>
-                <p class="fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ducimus sit adipisci voluptatum dolorem odit suscipit aliquam, culpa mollitia odio maxime consequatur obcaecati dolore? Quibusdam dignissimos placeat porro aperiam unde.</p>
-                <a href="#" class="btn btn-primary rounded-5 float-end">Demo</a>
-              </div>
-            </div>
-          </div>
+        <div class="contact-icons">
+          <a href=""><i class="bx bxl-facebook-circle"></i></a>
+          <a href=""><i class="bx bxl-twitter"></i></a>
+          <a href=""><i class="bx bxl-instagram"></i></a>
+          <a href=""><i class="bx bxl-linkedin"></i></a>
         </div>
+      </div>
+      <div class="contact-form">
+        <form action="">
+          <input type="text" placeholder="Enter Your Name" required />
+          <input type="email" placeholder="Enter Your Email" require />
+
+          <input type="text" placeholder="Enter Your Subject" />
+          <textarea
+            name=""
+            id=""
+            cols="40"
+            rows="10"
+            placeholder="Enter Your Message"
+            required
+          ></textarea>
+          <input type="submit" value="Submit" class="send" />
+        </form>
       </div>
     </section>
-
-    <section id="contact" class="py-5 bg-primary text-white">
-      <hr class="border-light border-3" />
-      <div class="container">
-        <div class="text-center mb-5 mt-5">
-          <h1 class="fw-bold text-uppercase">Contact Me</h1>
-          <hr class="border-light border-5 mx-auto col-lg-3 col-md-3 col-6" />
-        </div>
-        <div class="row flex-lg-row flex-md-row flex-column-reverse gap-lg-0 gap-md-0 gap-5">
-          <div class="col-lg-6 col-md-6 col-12">
-            <h4 class="text-capitalize">Let's work together</h4>
-            <p class="col-lg-10 col-md-10 col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat magni dignissimos perspiciatis quidem aut error dolorum, sunt suscipit quibusdam. Accusantium!</p>
-            <div class="d-flex flex-column gap-2">
-              <h6 class="d-flex align-items-center gap-1">
-                <i class="bx bxs-send"></i>
-                <a href="mailto:uwamariyaassumpta24@gmail.com" class="text-decoration-none text-white"> uwamariyaassumpta24@gmail.com</a>
-              </h6>
-
-              <h6 class="d-flex align-items-center gap-1">
-                <i class="bx bxs-phone"></i>
-                <a href="tel:+250780193787" class="text-decoration-none text-white"> +250780193787</a>
-              </h6>
-
-              <div class="mx-lg-0 mx-md-0 mx-auto w-50">
-                <ul class="list-unstyled d-flex gap-3">
-                  <li class="bg-white px-2 py-1 rounded-circle">
-                    <a href="#" class="text-primary" style="--1: 7"><i class="bx bxl-facebook"></i></a>
-                  </li>
-                  <li class="bg-white px-2 py-1 rounded-circle">
-                    <a href="#" class="text-primary" style="--1: 8"><i class="bx bxl-instagram"></i></a>
-                  </li>
-                  <li class="bg-white px-2 py-1 rounded-circle">
-                    <a href="#" class="text-primary" style="--1: 9"><i class="bx bxl-whatsapp"></i></a>
-                  </li>
-                  <li class="bg-white px-2 py-1 rounded-circle">
-                    <a href="#" class="text-primary" style="--1: 10"><i class="bx bxl-tiktok"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-12">
-            <div>
-              <form method="post" action="#">
-                <div class="input-group mb-3">
-                  <span class="input-group-text border-dark" id="basic-addon1"><i class="bx bxs-user"></i></span>
-                  <input type="text" class="form-control border-dark" placeholder="Enter your name" required />
-                </div>
-
-                <div class="input-group mb-3">
-                  <span class="input-group-text border-dark" id="basic-addon1"><i class="bx bxs-send"></i></span>
-                  <input type="email" class="form-control border-dark" placeholder="Enter your email" required />
-                </div>
-
-                <div class="input-group mb-3">
-                  <span class="input-group-text border-dark" id="basic-addon1"><i class="bx bxs-message"></i></span>
-                  <input type="text" class="form-control border-dark" placeholder="Enter your subject" required />
-                </div>
-
-                <textarea class="form-control border-dark" rows="5" placeholder="Enter your message" required></textarea>
-
-                <button type="submit" class="btn btn-outline-light mt-2 w-100">Send</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="border-top border-primary py-3">
-        <h6 class="text-center mt-2">Developed By Assumpta &#169; <span id="year" class="text-primary fw-bold"></span></h6>
-      </div>
-    </footer>
-    <a href="#home" class="btn-top">
-      <i class="float bx bx-up-arrow-alt icon bg-primary text-white rounded-circle py-1 px-1"></i>
-    </a>
+    <div class="last-text">
+      <p>Developed By Assumpta &#169; 2025</p>
+    </div>
+    <a href="#" class="top"><i class="bx bx-up-arrow-alt"></i> </a>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
     <script src="main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
   </body>
 </html>
